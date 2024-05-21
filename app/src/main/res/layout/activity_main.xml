@@ -154,6 +154,7 @@
             app:layout_constraintVertical_bias="0.033"
             tools:ignore="HardcodedText,TextSizeCheck" />
 
+
         <TextView
             android:id="@+id/price"
             android:layout_width="148dp"
