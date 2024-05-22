@@ -1,480 +1,242 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
+<androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity"
-    >
+    tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/location"
-            android:layout_width="150dp"
-            android:layout_height="22dp"
-            android:fontFamily="@font/archivo"
-            android:text="@string/siargao"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:typeface="normal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/num_rate"
-            app:layout_constraintHorizontal_bias="0.674"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Header_Title_Section"
-            app:layout_constraintVertical_bias="0.015"
-            tools:ignore="TextSizeCheck" />
-
-        <TextView
-            android:id="@+id/sec1"
-            android:layout_width="141dp"
-            android:layout_height="17dp"
-            android:fontFamily="@font/archivo"
-            android:text="Age 0-90, max of 15 per group"
-            android:textAlignment="viewStart"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            android:typeface="normal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.907"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.434"
-            tools:ignore="HardcodedText,SmallSp,TextSizeCheck" />
-
-        <TextView
-            android:id="@+id/sec2"
-            android:layout_width="166dp"
-            android:layout_height="16dp"
-            android:fontFamily="@font/archivo"
-            android:text="Duration: 7 hours"
-            android:textAlignment="viewStart"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            android:typeface="normal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.465"
-            tools:ignore="HardcodedText,SmallSp,TextSizeCheck" />
-
-        <TextView
-            android:id="@+id/sec3"
-            android:layout_width="166dp"
-            android:layout_height="16dp"
-            android:fontFamily="@font/archivo"
-            android:text="@string/start_time_check_availability"
-            android:textAlignment="viewStart"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            android:typeface="normal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.499"
-            tools:ignore="SmallSp,TextSizeCheck" />
-
-        <TextView
-            android:id="@+id/sec4"
-            android:layout_width="166dp"
-            android:layout_height="16dp"
-            android:fontFamily="@font/archivo"
-            android:text="Mobile Ticket"
-            android:textAlignment="viewStart"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            android:typeface="normal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.541"
-            tools:ignore="HardcodedText,SmallSp,TextSizeCheck" />
-
-        <TextView
-            android:id="@+id/sec5"
-            android:layout_width="166dp"
-            android:layout_height="16dp"
-            android:fontFamily="@font/archivo"
-            android:text="Live Guide: English"
-            android:textAlignment="viewStart"
-            android:textSize="10sp"
-            android:textStyle="bold"
-            android:typeface="normal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.576"
-            tools:ignore="HardcodedText,SmallSp,TextSizeCheck" />
-
-        <TextView
-            android:id="@+id/rating"
-            android:layout_width="147dp"
-            android:layout_height="27dp"
-            android:fontFamily="@font/archivo"
-            android:text="Rating"
-            android:textAlignment="center"
-            android:textSize="16sp"
-            android:typeface="normal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.882"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView"
-            app:layout_constraintVertical_bias="0.052"
-            tools:ignore="HardcodedText,TextSizeCheck" />
-
-        <TextView
-            android:id="@+id/from"
-            android:layout_width="147dp"
-            android:layout_height="27dp"
-            android:fontFamily="@font/archivo"
-            android:text="from"
-            android:textAlignment="viewStart"
-            android:textSize="16sp"
-            android:typeface="normal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageView3"
-            app:layout_constraintHorizontal_bias="0.728"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/location"
-            app:layout_constraintVertical_bias="0.033"
-            tools:ignore="HardcodedText,TextSizeCheck" />
-
-
-        <TextView
-            android:id="@+id/price"
-            android:layout_width="148dp"
-            android:layout_height="20dp"
-            android:fontFamily="@font/archivo"
-            android:text="Lowest Price"
-            android:textAlignment="viewStart"
-            android:textSize="14sp"
-            android:typeface="normal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.239"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/php"
-            app:layout_constraintVertical_bias="0.032"
-            tools:ignore="HardcodedText,TextSizeCheck" />
-
-        <TextView
-            android:id="@+id/num_rate"
-            android:layout_width="147dp"
-            android:layout_height="27dp"
-            android:fontFamily="@font/archivo"
-            android:text="4.8 (3.2k)"
-            android:textAlignment="center"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:typeface="normal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.882"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView"
-            app:layout_constraintVertical_bias="0.106"
-            tools:ignore="HardcodedText,TextSizeCheck" />
-
-        <TextView
-            android:id="@+id/php"
-            android:layout_width="147dp"
-            android:layout_height="27dp"
-            android:fontFamily="@font/archivo"
-            android:text="3,164.27php"
-            android:textAlignment="center"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            android:typeface="normal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.193"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/from"
-            app:layout_constraintVertical_bias="0.0"
-            tools:ignore="HardcodedText,TextSizeCheck" />
-
-        <Button
-            android:id="@+id/btn_book"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="BOOK NOW"
-            android:textStyle="bold"
-            app:backgroundTint="#009688"
-            app:circularflow_radiusInDP="5dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.177"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/price"
-            app:layout_constraintVertical_bias="0.025"
-            tools:ignore="HardcodedText" />
-
-        <TextView
-            android:id="@+id/Header_Title_Section"
-            android:layout_width="164dp"
-            android:layout_height="21dp"
-            android:fontFamily="@font/archivo"
-            android:text="Naked Islands"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/rating"
-            app:layout_constraintHorizontal_bias="0.608"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/cardView"
-            app:layout_constraintVertical_bias="0.045"
-            tools:ignore="HardcodedText,TextSizeCheck" />
-
-        <TextView
-            android:id="@+id/About"
-            android:layout_width="215dp"
-            android:layout_height="21dp"
-            android:fontFamily="@font/archivo"
-            android:text="About"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.153"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.657"
-            tools:ignore="HardcodedText,TextSizeCheck" />
-
-        <ImageView
-            android:id="@+id/imageView5"
-            android:layout_width="18dp"
-            android:layout_height="19dp"
-            android:src="@drawable/_7"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/sec5"
-            app:layout_constraintHorizontal_bias="0.96"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.578"
-            tools:ignore="ContentDescription" />
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="32dp"
-            android:layout_height="24dp"
-            android:layout_marginEnd="164dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.99"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.429"
-            app:srcCompat="@drawable/_3"
-            tools:ignore="ContentDescription" />
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="29dp"
-            android:layout_height="27dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/sec3"
-            app:layout_constraintHorizontal_bias="0.986"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.497"
-            app:srcCompat="@drawable/_4"
-            tools:ignore="ContentDescription" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="24dp"
-            android:layout_height="25dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/sec2"
-            app:layout_constraintHorizontal_bias="0.981"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.463"
-            app:srcCompat="@drawable/_5"
-            tools:ignore="ContentDescription" />
-
-        <ImageView
-            android:id="@+id/imageView4"
-            android:layout_width="23dp"
-            android:layout_height="32dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/sec4"
-            app:layout_constraintHorizontal_bias="0.977"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.542"
-            app:srcCompat="@drawable/_6"
-            tools:ignore="ContentDescription" />
-
-        <ImageView
-            android:id="@+id/imageView8"
-            android:layout_width="39dp"
-            android:layout_height="47dp"
-            android:layout_marginStart="24dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.516"
-            tools:ignore="ContentDescription" />
-
-        <com.borjabravo.readmoretextview.ReadMoreTextView
-            android:id="@+id/text_view"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:text="@string/About_show"
-            android:textSize="16sp"
-            app:colorClickableText="#039BE5"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.726"
-            app:trimCollapsedText="@string/read_more"
-            app:trimExpandedText="@string/read_less"
-            app:trimLength="60"
-            app:trimMode="trimModeLength" />
+            android:orientation="vertical">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="523dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/image_slider_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="252dp">
-
-                <com.smarteist.autoimageslider.SliderView
-                    android:id="@+id/image_slider"
+                <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
-                    android:layout_height="253dp"
-                    app:sliderAnimationDuration="600"
-                    app:sliderAutoCycleDirection="back_and_forth"
-                    app:sliderAutoCycleEnabled="true"
-                    app:sliderIndicatorAnimationDuration="600"
-                    app:sliderIndicatorGravity="center_horizontal|bottom"
-                    app:sliderIndicatorMargin="15dp"
-                    app:sliderIndicatorOrientation="horizontal"
-                    app:sliderIndicatorPadding="3dp"
-                    app:sliderIndicatorRadius="2dp"
-                    app:sliderIndicatorSelectedColor="#5A5A5A"
-                    app:sliderIndicatorUnselectedColor="#FFF"
-                    app:sliderScrollTimeInSec="2"
-                    app:sliderStartAutoCycle="true"
-                    tools:layout_editor_absoluteX="8dp"
-                    tools:layout_editor_absoluteY="609dp" />
+                    android:layout_height="200dp"
+                    android:background="@color/white"
+                    app:cardCornerRadius="0dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5">
 
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginStart="24dp"
-            android:layout_marginEnd="24dp"
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintVertical_bias="0.255">
+                    <com.denzcoskun.imageslider.ImageSlider
+                        android:id="@+id/imageSlider"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:iss_auto_cycle="true"
+                        app:iss_corner_radius="20"
+                        app:iss_delay="1000"
+                        app:iss_period="1000"
+                        app:iss_title_background="@color/white"/>
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
-                android:id="@+id/header1TV"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="What's included"
+                android:layout_marginStart="36dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="sans-serif"
+                android:text="@string/naked_islands"
+                android:textAlignment="textStart"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="56dp"
+                android:fontFamily="sans-serif"
+                android:text="Siargao, Philippines"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif"
+                    android:text="from"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    tools:ignore="HardcodedText,SpUsage,TextSizeCheck" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:text="3,164.27"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:layout_marginStart="56dp"
                 android:textStyle="bold"
-                android:layout_marginStart="20dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/btn1"
-                app:layout_constraintBottom_toBottomOf="@id/btn1"
-                tools:ignore="HardcodedText,TextSizeCheck" />
-
-            <ImageView
-                android:id="@+id/btn1"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:importantForAccessibility="no"
-                android:src="@drawable/baseline_keyboard_arrow_down_24"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/text1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="20dp"
-                android:text="@string/lorem"
-                android:visibility="gone"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/header1TV" />
-
-            <TextView
-                android:id="@+id/header2TV"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:text="What to expect"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/btn2"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/btn2"
                 tools:ignore="HardcodedText" />
 
-            <ImageView
-                android:id="@+id/btn2"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="20dp"
-                android:importantForAccessibility="no"
-                android:src="@drawable/baseline_keyboard_arrow_down_24"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/text1" />
-
-            <TextView
-                android:id="@+id/text2"
+            <Button
+                android:id="@+id/btn_book"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:padding="20dp"
-                android:text="@string/lorem"
-                android:visibility="gone"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="56dp"
+                android:text="BOOK NOW"
+                android:textStyle="bold"
+                app:backgroundTint="#009688"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="1dp"
+                    android:fontFamily="sans-serif"
+                    android:text="About"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.borjabravo.readmoretextview.ReadMoreTextView
+                    android:id="@+id/text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="24dp"
+                    android:text="@string/About_show"
+                    android:textSize="16sp"
+                    app:colorClickableText="#00897B"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.5"
+                    app:trimCollapsedText="@string/read_more"
+                    app:trimExpandedText="@string/read_less"
+                    app:trimLength="167"
+                    app:trimMode="trimModeLength" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/header2TV" />
+                app:layout_constraintVertical_bias="0.255">
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:id="@+id/header1TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What's included"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/btn1"
+                    app:layout_constraintBottom_toBottomOf="@id/btn1"
+                    tools:ignore="HardcodedText,TextSizeCheck" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageView
+                    android:id="@+id/btn1"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/baseline_keyboard_arrow_down_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-</ScrollView>
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="@string/lorem"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/header1TV" />
+
+                <TextView
+                    android:id="@+id/header2TV"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="What to expect"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/btn2"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/btn2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:importantForAccessibility="no"
+                    android:src="@drawable/baseline_keyboard_arrow_down_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/text1" />
+
+                <TextView
+                    android:id="@+id/text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"
+                    android:text="@string/lorem"
+                    android:visibility="gone"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/header2TV" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

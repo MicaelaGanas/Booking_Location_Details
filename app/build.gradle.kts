@@ -40,7 +40,7 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     implementation("com.borjabravo:readmoretextview:2.1.0")
     implementation("com.ms-square:expandableTextView:0.1.4")
-    implementation ("com.github.smarteist:autoimageslider:1.4.0")
+    implementation("com.github.denzcoskun:ImageSlideshow:0.1.2")
     implementation ("androidx.legacy:legacy-support-v4:1.0.0")
     testImplementation ("junit:junit:4.+'")
     androidTestImplementation("androidx.test.ext:junit:1.1.2")
